@@ -245,7 +245,6 @@ if run_step "6"; then
             source sourceme-manager.sh --skip-ssh-setup
             pushd sim
             make firesim-main-classpath
-            make target-classpath
             popd
         )
         exit_if_last_command_failed
