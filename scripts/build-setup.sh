@@ -101,8 +101,6 @@ do
             SKIP_LIST+=(10) ;;
         --skip-clean)
             SKIP_LIST+=(11) ;;
-        --force | -f | --skip-validate) # Deprecated flags
-            ;;
         * )
             error "invalid option $1"
             usage 1 ;;
@@ -244,11 +242,10 @@ if run_step "6"; then
         pushd $CYDIR/sims/firesim &&
         (
             set -e # Subshells un-set "set -e" so it must be re enabled
-            echo $CYDIR
             source sourceme-manager.sh --skip-ssh-setup
             pushd sim
-            make target-classpath
             make firesim-main-classpath
+            make target-classpath
             popd
         )
         exit_if_last_command_failed
