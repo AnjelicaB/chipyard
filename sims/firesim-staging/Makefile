@@ -14,13 +14,14 @@ sim_dir=$(abspath .)
 include $(base_dir)/variables.mk
 
 #########################################################################################
-# entrypoint
+# generate firrtl + annos needed for firesim
 #########################################################################################
 .PHONY: default
-default: $(FIRRTL_FILE) $(ANNO_FILE)
+default: firrtl
 
 #########################################################################################
 # unused
+# TODO: remove from main common.mk into simulator specific .mk
 #########################################################################################
 sim_name = unused
 sim_prefix = unused
