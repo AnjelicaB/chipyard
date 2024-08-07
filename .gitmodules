@@ -42,10 +42,10 @@
 	url = https://github.com/ucb-bar/coremark-workload.git
 [submodule "generators/gemmini"]
 	path = generators/gemmini
-	url = https://github.com/ucb-bar/gemmini
+	url = https://github.com/AnjelicaB/gemmini_a.git
 [submodule "software/firemarshal"]
 	path = software/firemarshal
-	url = https://github.com/firesim/FireMarshal.git
+	url = https://github.com/AnjelicaB/FireMarshal-a.git
 [submodule "generators/cva6"]
 	path = generators/cva6
 	url = https://github.com/ucb-bar/cva6-wrapper.git
